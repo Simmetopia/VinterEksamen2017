@@ -1,0 +1,107 @@
+█ [ C:\Users\20140\Desktop\VinterEksamen2017\swt\simon ] æs
+
+█ [ C:\Users\20140 ] ls
+
+
+    Directory: C:\Users\20140
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-----       11/16/2017   4:18 PM                .config                                                               
+d-----        12/1/2017  11:30 AM                .dotnet                                                               
+d-----       11/16/2017   4:37 PM                .nuget                                                                
+d-----        12/1/2017  11:32 AM                .omnisharp                                                            
+d-----       11/16/2017   4:34 PM                .ssh                                                                  
+d-----        12/4/2017  12:18 PM                .templateengine                                                       
+d-----       11/16/2017   3:58 PM                .vscode-insiders                                                      
+d-r---       12/27/2017  10:19 AM                3D Objects                                                            
+d-r---       12/27/2017  10:19 AM                Contacts                                                              
+d-r---       12/27/2017   9:06 PM                Desktop                                                               
+d-r---       12/27/2017  10:19 AM                Documents                                                             
+d-r---       12/28/2017   3:54 PM                Downloads                                                             
+d-r---       12/27/2017  10:19 AM                Favorites                                                             
+d-r---       12/28/2017   3:24 PM                Google Drive                                                          
+d-r---       12/27/2017  10:19 AM                Links                                                                 
+d-r---       12/27/2017  10:19 AM                Music                                                                 
+d-r---       11/27/2017   7:54 PM                OneDrive                                                              
+d-r---       12/27/2017  10:19 AM                Pictures                                                              
+d-r---       12/27/2017  10:19 AM                Saved Games                                                           
+d-r---       12/27/2017  10:19 AM                Searches                                                              
+d-----       11/26/2017  12:15 PM                source                                                                
+d-r---       12/27/2017  10:19 AM                Videos                                                                
+-a----       11/16/2017   6:49 PM             59 .gitconfig                                                            
+-a----       11/26/2017  12:56 PM            207 _netrc                                                                
+
+
+
+█ [ C:\Users\20140 ] dir
+
+
+    Directory: C:\Users\20140
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-----       11/16/2017   4:18 PM                .config                                                               
+d-----        12/1/2017  11:30 AM                .dotnet                                                               
+d-----       11/16/2017   4:37 PM                .nuget                                                                
+d-----        12/1/2017  11:32 AM                .omnisharp                                                            
+d-----       11/16/2017   4:34 PM                .ssh                                                                  
+d-----        12/4/2017  12:18 PM                .templateengine                                                       
+d-----       11/16/2017   3:58 PM                .vscode-insiders                                                      
+d-r---       12/27/2017  10:19 AM                3D Objects                                                            
+d-r---       12/27/2017  10:19 AM                Contacts                                                              
+d-r---       12/27/2017   9:06 PM                Desktop                                                               
+d-r---       12/27/2017  10:19 AM                Documents                                                             
+d-r---       12/28/2017   3:54 PM                Downloads                                                             
+d-r---       12/27/2017  10:19 AM                Favorites                                                             
+d-r---       12/28/2017   3:24 PM                Google Drive                                                          
+d-r---       12/27/2017  10:19 AM                Links                                                                 
+d-r---       12/27/2017  10:19 AM                Music                                                                 
+d-r---       11/27/2017   7:54 PM                OneDrive                                                              
+d-r---       12/27/2017  10:19 AM                Pictures                                                              
+d-r---       12/27/2017  10:19 AM                Saved Games                                                           
+d-r---       12/27/2017  10:19 AM                Searches                                                              
+d-----       11/26/2017  12:15 PM                source                                                                
+d-r---       12/27/2017  10:19 AM                Videos                                                                
+-a----       11/16/2017   6:49 PM             59 .gitconfig                                                            
+-a----       11/26/2017  12:56 PM            207 _netrc                                                                
+
+
+
+█ [ C:\Users\20140 ] ls
+
+
+    Directory: C:\Users\20140
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-----       11/16/2017   4:18 PM                .config                                                               
+d-----        12/1/2017  11:30 AM                .dotnet                                                               
+d-----       11/16/2017   4:37 PM                .nuget                                                                
+d-----        12/1/2017  11:32 AM                .omnisharp                                                            
+d-----       11/16/2017   4:34 PM                .ssh                                                                  
+d-----        12/4/2017  12:18 PM                .templateengine                                                       
+d-----       11/16/2017   3:58 PM                .vscode-insiders                                                      
+d-r---       12/27/2017  10:19 AM                3D Objects                                                            
+d-r---       12/27/2017  10:19 AM                Contacts                                                              
+d-r---       12/27/2017   9:06 PM                Desktop                                                               
+d-r---       12/27/2017  10:19 AM                Documents                                                             
+d-r---       12/28/2017   3:54 PM                Downloads                                                             
+d-r---       12/27/2017  10:19 AM                Favorites                                                             
+d-r---       12/28/2017   3:24 PM                Google Drive                                                          
+d-r---       12/27/2017  10:19 AM                Links                                                                 
+d-r---       12/27/2017  10:19 AM                Music                                                                 
+d-r---       11/27/2017   7:54 PM                OneDrive                                                              
+d-r---       12/27/2017  10:19 AM                Pictures                                                              
+d-r---       12/27/2017  10:19 AM                Saved Games                                                           
+d-r---       12/27/2017  10:19 AM                Searches                                                              
+d-----       11/26/2017  12:15 PM                source                                                                
+d-r---       12/27/2017  10:19 AM                Videos                                                                
+-a----       11/16/2017   6:49 PM             59 .gitconfig                                                            
+-a----       11/26/2017  12:56 PM            207 _netrc                                                                
+
+
+
