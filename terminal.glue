@@ -105,3 +105,56 @@ d-r---       12/27/2017  10:19 AM                Videos
 
 
 
+█ [ C:\Users\20140\Desktop\VinterEksamen2017 ] hmm
+hmm : The term 'hmm' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ hmm
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (hmm:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+█ [ C:\Users\20140\Desktop\VinterEksamen2017 ] git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   VinterEksamenen2017.sublime-workspace
+	modified:   swt/simon/tdd.tex
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	terminal.glue
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+cv█ [ C:\Users\20140\Desktop\VinterEksamen2017 ] git add .
+warning: LF will be replaced by CRLF in VinterEksamenen2017.sublime-workspace.
+The file will have its original line endings in your working directory.
+
+█ [ C:\Users\20140\Desktop\VinterEksamen2017 ] git commit -am "donger"
+[master 4dc2efc] donger
+ 3 files changed, 243 insertions(+), 25 deletions(-)
+ create mode 100644 terminal.glue
+
+█ [ C:\Users\20140\Desktop\VinterEksamen2017 ] ¨git push
+"git : The term '"git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ "git push
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: ("git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+█ [ C:\Users\20140\Desktop\VinterEksamen2017 ] git push
+To https://github.com/Simmetopia/VinterEksamen2017.git
+   da7c214..4dc2efc  master -> master
+
+█ [ C:\Users\20140\Desktop\VinterEksamen2017 ] clear
+

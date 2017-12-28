@@ -32,6 +32,7 @@
 *.run.xml
 *.bib.*
 *.bak
+*.glue
 
 # Minted
 */*/_minted*/
