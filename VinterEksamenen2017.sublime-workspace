@@ -1,0 +1,375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"softwaretesting.PNG"
+			],
+			[
+				"inc",
+				"\\includegraphics[options]{name}                   \tlatex-document"
+			],
+			[
+				"optio",
+				"options"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\\documentclass{article}\n\\usepackage{ctable,microtype,amsmath,amssymb,graphicx,float}\n\\usepackage{siunitx}\n\\usepackage{xkeyval} \n\\usepackage{cleveref}\n\\usepackage[utf8]{inputenc}\n\\usepackage[danish]{babel}\n\\usepackage{amsthm}\n\\setlength\\parindent{0pt}\n\\usepackage{fancyhdr}\n\\usepackage{dcolumn}\n\\usepackage[colorlinks,linkcolor=black,citecolor=blue,urlcolor=black]{hyperref}\n\\usepackage{setspace}\n\\usepackage[left=25mm, right=25mm, top=25mm, bottom=25mm]{geometry}\n\\usepackage{minted}\n\\usepackage{memhfixc}\n\\usepackage{subfiles}\n\\usepackage{csquotes}\n\\usepackage{xcolor}\n\\definecolor{LightGray}{gray}{0.9}\n%\\definecolor{DarkGray}{gray}{0.1}\n%\\pagecolor{DarkGray}\n\\usemintedstyle{borland}\n%New colors defined below\n\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\title{Test Driven Development}\n\\author{Simon Egeberg-201406253}\n\\usepackage[backend=biber,style=science,sorting=ynt,citestyle=science]{biblatex}\n\\addbibresource{references.bib}\n\\usepackage{graphicx}\n\\begin{document}\n\\maketitle\n\\section{Hvorfor TTD?}\nOmkring 65\\% af prisen på software ligger i at opretholde det software som er udviklet.\n\\textbf{Code Entropy}:\\\\\nDette sker fordi kode kan blive ``brittle'' over tid. Det kan være fordi at koden ikke er skalerbar.\n\n\\textbf{Isolated Ownership}:\\\\\nDer kan være dele af det som kun en enkelt \"koder\" kan dekode og udvikle. \n\n\\textbf{High risk code changes}\n\n\\section{Hvad er TDD?}\nInden man ved hvad TDD er, skal man vide hvad en test er. En \\textbf{test} er en procedure til at fastslå kvaliteten, performance eller pålideligheden af noget, specielt inden det tages i brug.\nDerfor kan en sammensætning af test vide om løsningen rent faktisk ér en løsning. At den smider det rigtige ud, givet inputs, og dens performance er tilstrækkelig. \\\\\n\nDette kulminere så i hvad TDD er. Det er en software udviklings process som drejer sig om en meget kort udviklings cyklus som gentages: Krav omskrives til specifikke testcases, også bliver der skrevet software til at bestå de tests.\n\n\\includegraphics[width = 0.5\\textwidth]{softwaretesting.PNG}\n\\includegraphics[width = 0.5\\textwidth]{redgreen.PNG}\n\\end{document}",
+			"file": "swt/simon/tdd.tex",
+			"file_size": 2301,
+			"file_write_time": 131589452076286697,
+			"settings":
+			{
+				"buffer_size": 2235,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSublimeLinter\n-------------\n\n  \n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n  \n  \n  Welcome to SublimeLinter, a linter framework for Sublime Text 3.\n  \n                   * * * IMPORTANT! * * *\n  \n          Linters *NOT* included with SublimeLinter 3,\n          they must be installed separately.\n  \n                  * * * READ THE DOCS! * * *\n  \n  Otherwise you will never know how to install linters, nor will\n  you know about all of the great new features in SublimeLinter 3.\n  \n  For complete documentation on how to install and use SublimeLinter,\n  please see:\n  \n  http://www.sublimelinter.com\n  \n  \n                   _   _      _       _\n                  | | | | ___| |_ __ | |\n                  | |_| |/ _ \\ | '_ \\| |\n                  |  _  |  __/ | |_) |_|\n                  |_| |_|\\___|_| .__/(_)\n                               |_|\n  \n  \n  Hundreds of hours have been spent writing and documenting SublimeLinter\n  to make it the best it can be — easy to use, easy to configure,\n  easy to update, easy to extend. If you use SublimeLinter and feel\n  it is making your coding life better and easier, please consider\n  making a donation to help fund development and support.\n  \n  To donate: https://github.com/SublimeLinter/SublimeLinter3#share-the-love\n  \n  Thank you!\n",
+			"settings":
+			{
+				"buffer_size": 1613,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sublimelinter",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"subli",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"box",
+				"Boxy Theme: Activation"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Preferences"
+			],
+			[
+				"sublime",
+				"Preferences: SublimeLint Settings – Default"
+			],
+			[
+				"sublimel",
+				"SublimeLint: Error Report (Open Files)"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"intall ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 438.0
+	},
+	"console":
+	{
+		"height": 154.0,
+		"history":
+		[
+			"cd ..",
+			"dir",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/20140/Desktop/VinterEksamen2017",
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt",
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon"
+	],
+	"file_history":
+	[
+		"/C/Users/20140/AppData/Roaming/Sublime Text 3/Packages/sublimelint/SublimeLint.sublime-settings",
+		"/C/Users/20140/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLint.sublime-settings",
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon/redgreen.PNG",
+		"/C/Users/20140/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"save"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "swt/simon/tdd.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1957,
+								1957
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"spell_check": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 102.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "VinterEksamenen2017.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 317.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
