@@ -26,12 +26,44 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-\title{Test Driven Development}
+\title{Fakes}
 \author{Simon Egeberg-201406253}
 \usepackage[backend=biber,style=science,sorting=ynt,citestyle=science]{biblatex}
 \addbibresource{references.bib}
 \usepackage{graphicx}
 \begin{document}
 \maketitle
+\section{TEST}
+\begin{enumerate}
+	\item Arrange
+	\begin{itemize}
+		\item Setup UUT og afhængigheder
+	\end{itemize}
+	\item Act
+	\begin{itemize}
+		\item Stimuler UUT (Dette er typisk selve testen)
+	\end{itemize}
+	\item Assert
+	\begin{itemize}
+		\item Check resultatet er som forventet
+	\end{itemize}
+\end{enumerate}
+\section{Hvorfor Fakes?}
+Når man laver unit tests så er det vigtigt at man har en form for validitet af sin test. Har den UUT man arbejder på afhængigheder, og disse afhængigheder manipulere data på en hvis måde for vores UUT, så har vi lige pludselig flere stedet vi kan få fejl. Dette er vi ikke interesseret i da det ødelægger validiteten af testen. Derfor laver vi en ``fake'' som retunere data som VI selv som udviklet kontrollere. 
 
+Hvordan bruger vi fakes? \textbf{TRIPLE-i} \\
+\begin{enumerate}
+	\item Hvilke afhængigheder er der?
+	\item Hvis de ikke allerede har interfaces, laves disse
+	\item Indsprøjte dem i UUT for isolation af testen.
+\end{enumerate}
+
+\section{Stub}
+Tilstandsbaserede tests, hvor resultatet af vores test afhænger af den tilstand vores unit-under-test (UUT) er i efter vi har påvirket den i en test case. Til denne type tests benytter vi en type af fakes vi kalder stubs. En Stub er en ``snydeudgave'' af en UUT's afhængighed, som er ret ``uintelligent'' -den eksisterer udelukkende for at opfylde UUT's behov for en afhængighed. Her testes stadig på UUT
+
+\section{Mock}
+Adfærdsbaserede tests, hvor resultatet af vores test afhænger af den adfærd vores UUT har haft med sine afhængigheder  efter vi har påvirket UUT i en test case. Til denne type tests benytter vi en type af fakes vi kalder mocks. En mock er, ligesom en stub, en ``snydeudgave'' af en UUT's afhængighed, men den er mere ``intelligent'' end en stub, idet den kan ``optage'' hvilken adfærd UUT har haft med den. Her testes på MOCK'en. En god regel er at holde mocks så simple som muligt
+
+\section{Isolation Frameworks}
+For at hjælpe udvikleren med at finde rundt i stubs og mocks er der lavet frameworks. Disse fungere typisk på den måde af de laver en hel fake instans af et interface. Så kan der via funtioner i den fake operationer som kan tjekke om funktionskald er blevet taget, eller hvilke retur værdier de skal have. Dette forenkler processen i stubs og mocks enormt, og sætter igen udviklingen af god software i fokus.
 \end{document}
