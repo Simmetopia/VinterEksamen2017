@@ -7,6 +7,7 @@
 \usepackage[danish]{babel}
 \usepackage{amsthm}
 \setlength\parindent{0pt}
+\setlength{\parskip}{1em}
 \usepackage{fancyhdr}
 \usepackage{dcolumn}
 \usepackage[colorlinks,linkcolor=black,citecolor=blue,urlcolor=black]{hyperref}
@@ -36,10 +37,12 @@
 \section{Coverage}
 \begin{enumerate}
 	\item \textbf{Function Coverage} Dette ser om en bestemt funktion er dækket
-	\item \textbf{Statement Coverage} har alle statements været kort igemmen
+	\item \textbf{Statement Coverage} har alle statements været kørt igemmen
 	\item \textbf{Branch Coverage} Has each branch (also called DD-path) of each control structure (such as in if and case statements) been executed? For example, given an if statement, have both the true and false branches been executed? Another way of saying this is, has every edge in the program been executed?
 	\item \textbf{Condition Coverage} Meget ligesom branch, dog ikke lige så pedantisk ||
 \end{enumerate}
 \section{Boundary Value Analysis}
-Når du så har 100\% code coverage, er du så home free? Ikke helt. Hvad med kvaliteten af dine tests? Hvilke tests er overhovedet nødvendige?
+Når du så har 100\% code coverage, er du så home free? Ikke helt. Hvad med kvaliteten af dine tests? Hvilke tests er overhovedet nødvendige? Jamen vi vil jo gerne teste for dem der er risiko for går galt. Dette er tit i grænseværdierne af funktionen tjekket? Altså kanterne. Hvis du har et krav som hedder \textbf{For alle større en 1 skal bla bla.}. hvad så hvis værdien er 1? og hvad hvis den er 0 og 2? 
+
+Hvis det er et simpelt større end mindre end som her, så giver det faktisk ikke mening at tjekker for boundry, boundry +1 boundry -1. 
 \end{document}

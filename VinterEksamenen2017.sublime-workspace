@@ -19,33 +19,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "swt/simon/tdd.tex",
-			"settings":
-			{
-				"buffer_size": 2679,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "swt/simon/fakes/fakes.tex",
-			"settings":
-			{
-				"buffer_size": 3444,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "swt/simon/Unit Tests/unittest.tex",
-			"settings":
-			{
-				"buffer_size": 1850,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"build_system_choices":
@@ -102,16 +75,12 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 46.0,
-		"last_filter": "",
+		"height": 277.0,
+		"last_filter": "git push",
 		"selected_items":
 		[
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"push",
+				"git push",
 				"Git: Push"
 			],
 			[
@@ -119,7 +88,11 @@
 				"Git: Quick Commit (repo)"
 			],
 			[
-				"git push",
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"push",
 				"Git: Push"
 			],
 			[
@@ -210,12 +183,18 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/20140/Desktop/VinterEksamen2017",
-		"/C/Users/20140/Desktop/VinterEksamen2017/swt",
-		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon"
 	],
 	"file_history":
 	[
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon/tdd.tex",
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon/fakes/fakes.tex",
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon/Unit Tests/unittest.tex",
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon/testkvali/testkvalitet.tex",
+		"/C/Users/20140/Downloads/UltraCCV-Solution/UltraCCV/UltraCCV.cs",
+		"/C/Users/20140/Downloads/ECS Legacy Solution/ECS.Legacy/Application.cs",
+		"/C/Users/20140/Downloads/ECS Legacy Solution/ECS.Legacy/TempSensor.cs",
+		"/C/Users/20140/Downloads/ECS Legacy Solution/ECS.Legacy/Heater.cs",
+		"/C/Users/20140/Downloads/ECS Legacy Solution/ECS.Legacy/ECS.cs",
 		"/C/Users/20140/AppData/Roaming/Sublime Text 3/Packages/User/article.sublime-snippet",
 		"/C/Users/20140/Desktop/VinterEksamen2017/.gitignore",
 		"/C/Users/20140/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
@@ -259,106 +238,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "swt/simon/tdd.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2679,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								2679
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"spell_check": false,
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "swt/simon/fakes/fakes.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3444,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1404,
-								1106
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"spell_check": true,
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 390.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "swt/simon/Unit Tests/unittest.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1850,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1410,
-								1410
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"spell_check": true,
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": false,
-								"indentSize": 4,
-								"tabSize": 4
-							},
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
