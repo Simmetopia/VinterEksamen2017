@@ -45,4 +45,7 @@
 Når du så har 100\% code coverage, er du så home free? Ikke helt. Hvad med kvaliteten af dine tests? Hvilke tests er overhovedet nødvendige? Jamen vi vil jo gerne teste for dem der er risiko for går galt. Dette er tit i grænseværdierne af funktionen tjekket? Altså kanterne. Hvis du har et krav som hedder \textbf{For alle større en 1 skal bla bla.}. hvad så hvis værdien er 1? og hvad hvis den er 0 og 2? 
 
 Hvis det er et simpelt større end mindre end som her, så giver det faktisk ikke mening at tjekker for boundry, boundry +1 boundry -1. 
+
+\section{CI}
+Hvis man har en Ci pipeline ville det være oplagt at ligge et step ind som kører coverage. Her kan man også sætte constraints ind, f.eks godkender den kun det commit hvis x\% code coverage.
 \end{document}

@@ -12,7 +12,7 @@
 \usepackage{dcolumn}
 \usepackage[colorlinks,linkcolor=black,citecolor=blue,urlcolor=black]{hyperref}
 \usepackage{setspace}
-\usepackage[left=25mm, right=25mm, top=25mm, bottom=25mm]{geometry}
+\usepackage[left=25mm, right=25mm, top=25mm, bottom=25mm]{geomeFy}
 \usepackage{minted}
 \usepackage{memhfixc}
 \usepackage{subfiles}
@@ -27,19 +27,21 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-\title{Continuous Integration}
+\title{Design for Testablity}
 \author{Simon Egeberg-201406253}
 \usepackage[backend=biber,style=science,sorting=ynt,citestyle=science]{biblatex}
 \addbibresource{references.bib}
 \usepackage{graphicx}
 \begin{document}
-\maketitle
-Arh, the magic of CI.
+Hvordan bruger vi fakes? \textbf{TRIPLE-i} \\
+\begin{enumerate}
+	\item Hvilke afhængigheder er der?
+	\item Hvis de ikke allerede har interfaces, laves disse
+	\item Indsprøjte dem i UUT for isolation af testen.
+\end{enumerate}
 
-Idag har en udvikler et massivt kraftfuldt værktøj som hedder CI. Det betyder at du som udvikler kan få feedback på dit commit kort tid efter du har pushet det.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width = \textwidth]{../storyline.png}
-\end{figure}
-
+\section{Contructor injection}
+En let og simpel metode. Kan være farlig, hvis du har en monolith
+\section{Property Injection}
+Er farlig fordi den blotter de properties som der er. 
 \end{document}
