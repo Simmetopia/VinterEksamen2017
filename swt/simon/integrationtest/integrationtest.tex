@@ -35,5 +35,26 @@
 \begin{document}
 \maketitle
 \section{Opstil dit software}
+Nu har vi skrevet alle vores unit test og alt er grønt. YES, alle moduler virker. Men kan de kører sammen? Fungere vores software som en enhed?
+Det er det vi har integration tests til. Disse er som regl langsommere at kører, og bliver kun kørt hvis der er grønt lys fra alle unit tests. Hvilket iøvrigt er intuitivt nok. 
+Først opstillet et dependency diagram. Dette diagram hjælper dig så med at vælge hvilken metode at integratio test du vil lave.
 
+Når dette Dep tree er fundet, så kan der begyndes at se på metoder. 
+\section{Big Bang Integration Test}
+Her testes det hele bare sammen på en gang. Det kan virke for lav kompleksitets systemer. Dog får man lidt feedback ud af systemet, og man ved ikke hvor det fejler.
+
+\section{Buttoms up}
+Her startes nederest fra sit dep tree. Med nederst betyder det som er mest hardware nært. Hvis højere niveau moduler skal bruges, stubbes disse, men da men starter nederst i sit dep tree sker dette sjældent. Det negative ved denne test er at man ret sent begynder at teste sine høj niveau moduler, som nok er det mest essentielle
+
+\section{Top Down}
+Ret modsat, startes her fra toppen og ned. Dette kan være smart, fordi man kommer til at teste sine højniveau/controllere ret tidligt i processen. Dog modsat, og sidder man i et sprog som ikke har et isolation framework, så får man travlt med at skrive stubs. 
+
+\section{Collabotration}
+Disse er smarte fordi de nærmest kan følge en usecase. Her tager man altså et helt niveau fra top til bund. Det negative er dog at det er en form for mini big bangs man laver. PLus det bliver svært at motionere det laveste komponenter (fordi de er sidst i integration testen)
+
+\section{Sandwich}
+Her bliver både TD og BU brugt. Dette eliminere de fleste negative sider ved begge. Dette kræver dog enorm planlægning.
+
+\section{CI}
+Integration test er især kraftfuld i sammenhæng med CI
 \end{document}

@@ -19,6 +19,27 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "swt/simon/testkvali/testkvalitet.tex",
+			"settings":
+			{
+				"buffer_size": 2329,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\\documentclass{article}\n\\usepackage{ctable,microtype,amsmath,amssymb,graphicx,float}\n\\usepackage{siunitx}\n\\usepackage{xkeyval} \n\\usepackage{cleveref}\n\\usepackage[utf8]{inputenc}\n\\usepackage[danish]{babel}\n\\usepackage{amsthm}\n\\setlength\\parindent{0pt}\n\\setlength{\\parskip}{1em}\n\\usepackage{fancyhdr}\n\\usepackage{dcolumn}\n\\usepackage[colorlinks,linkcolor=black,citecolor=blue,urlcolor=black]{hyperref}\n\\usepackage{setspace}\n\\usepackage[left=25mm, right=25mm, top=25mm, bottom=25mm]{geometry}\n\\usepackage{minted}\n\\usepackage{memhfixc}\n\\usepackage{subfiles}\n\\usepackage{csquotes}\n\\usepackage{xcolor}\n\\definecolor{LightGray}{gray}{0.9}\n%\\definecolor{DarkGray}{gray}{0.1}\n%\\pagecolor{DarkGray}\n\\usemintedstyle{borland}\n%New colors defined below\n\\definecolor{codegreen}{rgb}{0,0.6,0}\n\\definecolor{codegray}{rgb}{0.5,0.5,0.5}\n\\definecolor{codepurple}{rgb}{0.58,0,0.82}\n\\definecolor{backcolour}{rgb}{0.95,0.95,0.92}\n\\title{Integration tests}\n\\author{Simon Egeberg-201406253}\n\\usepackage[backend=biber,style=science,sorting=ynt,citestyle=science]{biblatex}\n\\addbibresource{references.bib}\n\\usepackage{graphicx}\n\\begin{document}\n\\maketitle\n\\section{Opstil dit software}\nNu har vi skrevet alle vores unit test og alt er grønt. YES, alle moduler virker. Men kan de kører sammen? Fungere vores software som en enhed?\nDet er det vi har integration tests til. Disse er som regl langsommere at kører, og bliver kun kørt hvis der er grønt lys fra alle unit tests. Hvilket iøvrigt er intuitivt nok. \nFørst opstillet et dependency diagram. Dette diagram hjælper dig så med at vælge hvilken metode at integratio test du vil lave.\n\\end{document}",
+			"file": "swt/simon/integrationtest/integrationtest.tex",
+			"file_size": 1212,
+			"file_write_time": 131591103388549374,
+			"settings":
+			{
+				"buffer_size": 1623,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"build_system_choices":
@@ -183,9 +204,13 @@
 	},
 	"expanded_folders":
 	[
+		"/C/Users/20140/Desktop/VinterEksamen2017",
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt",
+		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon"
 	],
 	"file_history":
 	[
+		"/C/Users/20140/AppData/Roaming/Sublime Text 3/Packages/User/article.sublime-snippet",
 		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon/tdd.tex",
 		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon/fakes/fakes.tex",
 		"/C/Users/20140/Desktop/VinterEksamen2017/swt/simon/Unit Tests/unittest.tex",
@@ -195,7 +220,6 @@
 		"/C/Users/20140/Downloads/ECS Legacy Solution/ECS.Legacy/TempSensor.cs",
 		"/C/Users/20140/Downloads/ECS Legacy Solution/ECS.Legacy/Heater.cs",
 		"/C/Users/20140/Downloads/ECS Legacy Solution/ECS.Legacy/ECS.cs",
-		"/C/Users/20140/AppData/Roaming/Sublime Text 3/Packages/User/article.sublime-snippet",
 		"/C/Users/20140/Desktop/VinterEksamen2017/.gitignore",
 		"/C/Users/20140/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
 		"/C/Users/20140/Desktop/VinterEksamen2017/terminal.glue",
@@ -238,8 +262,68 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "swt/simon/testkvali/testkvalitet.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2179,
+								2179
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"old_syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "swt/simon/integrationtest/integrationtest.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1608,
+								1608
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
