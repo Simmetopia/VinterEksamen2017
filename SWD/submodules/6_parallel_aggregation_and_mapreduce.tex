@@ -1,6 +1,18 @@
-\documentclass[../report.tex]{subfiles}
+\documentclass[../SWD_disp.tex]{subfiles}
 
 \begin{document}
 \section{Parallel Aggregation og Mapreduce}
+\subsection{Mapreduce}
+Det handler om at tage en kæmpe opgave og dele den på, så adskillige forskellige individer (threads) kan arbejde på dele uafhængigt. 
 
+Eksemplet er givet med at læse blogs:
+\begin{enumerate}
+    \item \textbf{Mappers} for sider de skal læse og skrive ordne om så Hej bliver til 3,hej
+    \item \textbf{Groupers} Dette skridt er det sværeste at multitaske, fordi her samles arbejdet fra alle mappers til det problem domæne som findes. f.eks alle ord mellem 1-10 ord. I dette tilfælde ville den tage arbejdet fra alle mappers til blot 10 forskellige stykker.
+    \item \textbf{Reducers} Disse tager de stykker der er tilbage fra grouper skridtet og laver den sidste handling på dem som er ønsket. f.eks at tælle alle ord på 1 - 10 bogstaver
+\end{enumerate}
+Følges ovenstående, så har man taget et potentielt kæmpe problem domæne og reduceret det til en opgave som kan splittes op for at benytte enhver resurce som er tilgængeligt.
+
+\subsection{Parallel Aggregation}
+Det er kunsten at samle forskellige subresultater i et stort resultat parallelt. 
 \end{document}

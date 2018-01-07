@@ -1,4 +1,4 @@
-\documentclass[../report.tex]{subfiles}
+\documentclass[../SWD_disp.tex]{subfiles}
 
 \begin{document}
 \section{Strategy og Template Method Pattern}
@@ -10,9 +10,9 @@ Ideen med et design pattern er, at det kan beskrives som et problem, der forekom
 I løbet af kurset er GoF design patterns (Gang of Four) blevet gennemgået. Der er 23 patterns opdelt i 3 grupper. Disse 3 grupper definerer følgende
 
 \begin{itemize}
-    \item \textbf{Creational Patterns:} Fortæller hvordan obekter oprettet på en fornuftig måde
-    \item \textbf{Structural Patterns:} Fortæller hvordan koden skal struktureres, således at den er fleksibel eller reusable osv.
-    \item \textbf{Behaviour:} Fortæller om adfærd og hvordan koden skal opføre sig for, at blive fleksibel eller reusable osv.
+    \item \textbf{Creational Patterns:} Fortæller hvordan objekter oprettet på en fornuftig måde
+    \item \textbf{Structural Patterns:} Fortæller hvordan koden skal struktureres, således at den er fleksibel eller reusable osv. (Dette svare til et klassediagram)
+    \item \textbf{Behaviour:} Fortæller om adfærd og hvordan koden skal opføre sig for, at blive fleksibel eller reusable osv. (Dette svare til et sekvensdiagram)
 \end{itemize}
 
 \subsection*{GoF Strategy Pattern}
@@ -25,11 +25,11 @@ Et strategy pattern definerer følgende punkter
     \item Tilhører behavioral pattern (specificerer hvordan komminukationen mellem klasser skal foregå)
 \end{itemize}
 
-Figur \ref{fig:strategy_pattern} viser et eksempel på et Strategy Pattern
+Figur~\ref{fig:strategy_pattern} viser et eksempel på et Strategy Pattern
 
 \begin{figure}[H]
     \centering
-    \includegraphics{pics/strategy_pattern.PNG}
+    \includegraphics{strategy_pattern.PNG}
     \caption{Strategy Pattern}
     \label{fig:strategy_pattern}
 \end{figure}
@@ -47,7 +47,7 @@ Template Method Pattern definerer skellettet af en algoritme ud fra en operation
 
 \begin{figure}[H]
     \centering
-    \includegraphics{pics/template_method_pattern.PNG}
+    \includegraphics{template_method_pattern.PNG}
     \caption{Template Method Pattern}
     \label{fig:template_method_pattern}
 \end{figure}
