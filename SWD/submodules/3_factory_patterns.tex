@@ -18,53 +18,42 @@ Dette pattern definerer et interface for oprettelse af objektet, man lader klass
 \begin{figure}[H]
     \centering
     \includegraphics[width = \textwidth]{factory_pattern.PNG}
-    \caption{Factory Pattern}
-    \label{fig:factory_pattern}
 \end{figure}
 
 Definerer et interface ud fra \textbf{CreatePage()}, men lader klasserne der implementerer interfacet bestemme hvilket objekt der skal oprettes. Den abstrakte klasse vil blive anvendt således, at andre funktioner kan modtages ved arv af subklasserne.
 
 \subsection*{Abstract Factory Pattern}
-Det abstrakte factory pattern giver mulighed for, at oprette grupper af relaterede objekter, uden krav om at angive de nøjagtive konkrete klasser, der vil blive anvendt.
-\\
+I modsætning til det almene factory vist tidligere, så understøtter et abstract factory et pattern som kan retunere et nyt factory. Dette betyder altså at du kan retunere et factory fra et factory. 
 
-Abstract Factory er godt hvis man gerne vil generaliserer et system. Et eksempel kunne være et vægtsystem. Har man f.eks. et vægtsystem, der kun virker for Føtex, og der senere skal kunne inarbejdes et ny system ved siden af, skal der ændres i mange ting. Dvs. godt til store og komplekse systemer.
+antag vi har en abstract klasse HotDrink. Dette er en form for varm drikkelse. Vi vil have mulighed for at lave både Kaffer og Te af vores hotdrinks, men kun en ting af gangen. 
 
+Forestil dig er der er 15 forskellige typer af både kaffe og te. Interfaces HotDrinkFactory er det abstracte factory. Dette er altså bare en måde at sige, lige meget hvilket factory som arver fra mig, så kan du få det. 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = \textwidth]{weight_system.PNG}
-    \caption{Vægtsystem}
-    \label{fig:weight_system}
-\end{figure}
+Lad os så antage at jeg ville have en kop dejlig Espresso, så skal jeg altså lave et nyt 
+\mint{typescript}|coffeeFac: HotDrinkFactory = new CoffeeFactory()|
+Her antages det at der hvor vores factory skal bruges, at der findes en parameter HotDrinkFactory. 
 
+Alternativt kan der laves en ny klasse til at encapsulere både vores te og kaffe factories kaldet DrinkFactory. Så kan der kaldes direkte på dem: 
+Nu kan vi enten ved at kalde make med den kaffe eller te vi vil have, også få det rette object tilbage.
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{l|p{0.7\textwidth}}
-        Klasse          & Beskrivelse        \\ \toprule
-        WeigthSystem                & Denne klasse bruger factories til at generere en familie af relaterede objekter. For oven ses vægtsystemet den vil have tre private felter, som holder instanser af de 3 abstrakte klasser (interfaces)    \\ \midrule
-        Interface(Printer/display/WeightUnit): & Dette er en abstract base klasse, for føtex enhederne.          \\ \midrule
-        FøtexUnit/Printer/display    & De enkelte subclasses af interface klasserne indeholder deres egne specifikke funktionaliteter. Objekter af disse klasser er genereret ud af Interfacene for at befolke vægtsystemet. \\ \bottomrule
-    \end{tabular}
-    \caption{sammenligning af WPF og UWP}\label{tab:wpfVSuwp}
-\end{table}
+\begin{minted}{typescript}
+export class DrinkFactory {
 
-\subsection*{Eksempel på anvendelsen af Abstract Factory Pattern}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = \textwidth]{usage_abstract_factory.PNG}
-    \caption{Anvenselse af Abstract Factory}
-    \label{fig:usage_abstract_factory}
-\end{figure}
+    public coffee: CoffeeFactory;
+    public tea: TeaFactory;
+
+    constructor() {
+        this.coffee = new CoffeeFactory();
+        this.tea = new TeaFactory();
+    }
+}
+\end{minted}
+
+Dette kan yderligere afkobles ved at bruge dependency inversion, og dependency inject de factories man skal bruge. På den måde kan drink factory understykke enhver 2 typer varme drinks. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = \textwidth]{abstract_factory_code.PNG}
-    \caption{Abstract Factory Kode}
-    \label{fig:abstract_factory_code}
+    \includegraphics[width = 0.5\textwidth]{abstract_factory.PNG}
 \end{figure}
-
-
 
 \end{document}
