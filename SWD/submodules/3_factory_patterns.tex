@@ -39,8 +39,8 @@ Nu kan vi enten ved at kalde make med den kaffe eller te vi vil have, også få 
 \begin{minted}{typescript}
 export class DrinkFactory {
 
-    public coffee: CoffeeFactory;
-    public tea: TeaFactory;
+    public coffee: HotDrinkFactory;
+    public tea: HotDrinkFactory;
 
     constructor() {
         this.coffee = new CoffeeFactory();
@@ -49,11 +49,11 @@ export class DrinkFactory {
 }
 \end{minted}
 
-Dette kan yderligere afkobles ved at bruge dependency inversion, og dependency inject de factories man skal bruge. På den måde kan drink factory understykke enhver 2 typer varme drinks. 
+Dette kan yderligere afkobles ved at bruge dependency inversion, og dependency inject de factories man skal bruge. På den måde kan drink factory understøtte enhver 2 typer varme drinks. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.5\textwidth]{abstract_factory.PNG}
+    \includegraphics[width = 0.6\textwidth]{abstract_factory.PNG}
 \end{figure}
 
 \end{document}
