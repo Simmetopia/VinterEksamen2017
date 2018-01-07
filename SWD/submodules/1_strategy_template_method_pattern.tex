@@ -14,7 +14,7 @@ I løbet af kurset er GoF design patterns (Gang of Four) blevet gennemgået. Der
     \item \textbf{Structural Patterns:} Fortæller hvordan koden skal struktureres, således at den er fleksibel eller reusable osv. (Dette svare til et klassediagram)
     \item \textbf{Behaviour:} Fortæller om adfærd og hvordan koden skal opføre sig for, at blive fleksibel eller reusable osv. (Dette svare til et sekvensdiagram)
 \end{itemize}
-
+\subsection{SKRIV OM ET PNG PATTERN}
 \subsection*{GoF Strategy Pattern}
 Et strategy pattern definerer følgende punkter
 
@@ -34,8 +34,7 @@ Figur~\ref{fig:strategy_pattern} viser et eksempel på et Strategy Pattern
     \label{fig:strategy_pattern}
 \end{figure}
 
-\textbf{Client:} Denne klasse er brugeren af den udskiftelige algoritme. Dens egenskab er, at holde på en af strategy klasserne. Denne egenskab vil blive sat ved run-time.
-\\
+\textbf{Client:} Denne klasse er brugeren af den udskiftelige algoritme. Dens egenskab er, at holde på en af strategy klasserne. Denne egenskab vil blive sat eller ændret ved run-time.
 
 \textbf{StrategyBase:} Abstrakt klasse, og base klasse for alle klasser, der anvender en algoritme. Dette eksempel har kun 1 modul. Denne klasse kan blive implementeret, som et interface, hvis ikke det har nogle funktioner for dens nedarvede klasser.
 \\
