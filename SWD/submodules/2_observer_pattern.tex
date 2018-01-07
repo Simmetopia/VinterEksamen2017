@@ -7,13 +7,13 @@ Giv definitionen af et design pattern til at starte med.
 
 \subsection{Opbygning af Observer Pattern}
 Observer Pattern er i gruppen af behavioral patterns, fordi den denfinerer måden for kommunkationen mellem klasserne.
-\\
+
 
 Det tillate et enkelt object kendt som "subject" til, at publiserer ændringer i dens state. En eller mange observer objekter der afhænger af subjects, kan subscribe til et, således at de automatisk bliver notificeret.
-\\
+
 
 Observer Pattern giver lav koblint mellem subjects og observers
-\\
+
 
 Provider (data der ændres) og Consumer (data der skal hentes fra provider)
 \begin{itemize}
@@ -30,7 +30,7 @@ Provider (data der ændres) og Consumer (data der skal hentes fra provider)
     \label{fig:observer_pattern}
 \end{figure}
 
-At anvende SOLID principper, fremmer godt software design. at følge OCP betyder at du får lav kobling mellem dine klasser. Dette resultere yderemere i software som er let at teste.
+At anvende SOLID principper, fremmer godt software design. At følge OCP betyder at du får lav kobling mellem dine klasser. Dette resultere yderemere i software som er let at teste.
 
 \subsection*{Fordele}
 \begin{itemize}
@@ -48,8 +48,9 @@ At anvende SOLID principper, fremmer godt software design. at følge OCP betyder
 \subsection{Push vs Pull Observer}
 Når du har klaret opsætningen med observer, så skal der tages endnu et valg. Vil du kører med en push observer eller en pull observer?
 \subsubsection{Push}
-Dette handler om at dit subject ``pusher'' sine ændringer 
+Dette handler om at dit subject ``pusher'' sine ændringer. På denne måde får man en kopi eller reference af hele subject. Dette er smart hvis dit subject er lille eller du skal bruge alt info i dit subject. Der kan opstå problemer ved dette hvis du kun skal bruge en meget lille del af dit subject. I dette tilfælde kan det være crazy at modtage hele subject.    
 \subsubsection{Pull}
+Derfor kan man benytte pull. Der får man som observer bare besked på at der er en opdatering. Så ved observer at nu er der data som er nyt, og kan hente det data som er nødvendigt eller ønsket. 
 
 
 % \subsection*{Forskellige varianter af GoF Observer}

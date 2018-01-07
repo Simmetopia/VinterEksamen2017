@@ -14,35 +14,12 @@ State Pattern et objekts klasser til, at ændre ved run-time, uden at ændre int
     \label{fig:state_pattern}
 \end{figure}
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{l|p{0.7\textwidth}}
-        Klasse          & Beskrivelse        \\ \toprule
-        Context                & Denne klasse bliver brugt af klienter af state design pattern. Klienter har ikke adgang til state objekterne direkte. Til enhver tid vil Context klassen holde et konkret state objekt, der kun fortæller om den nuværende state. Den består også af aktioner hvilket skal udføres alt efter hvilken state den modtager.    \\ \midrule
-        Statebase &: Er den abstrakte klassen og base klassen for de konkrete klasser (subklasser). Statebase definerer grænsefladen, som bliver brugt af context objekt til, at tilgå den skiftelige funktionalitet. Den består typisk af default implementeringer af alle handlers.        \\ \midrule
-        SubklasserneA/B    & Består af de rigtige funktionaliteter der bliver brugt af context objektet. Hver state klasse har en adfærd, der er gældende til en enkelt state af context objektet. De kan også bestå af instruktioner, der sørger for at context skifter state. \\ \bottomrule
-    \end{tabular}
-    \caption{sammenligning af WPF og UWP}\label{tab:wpfVSuwp}
-\end{table}
-
 \subsection{Sammenligning: Switch/Case-implementering med GoF State}
+State machines har tendens til at blive meget kompliceret. Ofte i advanceret software, skal der skiftes state tit, og det er vigtigt at vide hvilken state man befinder sig i. Derfor er der opfundet et pattern til at hjælpe med det. 
+Forstil dig et 4 case switch statement, og hver af disse 4 har yderligere fire har du 256 forksellige states du kan ende i.
+Ikke så underligt at der er brugt for et pattern. Det skal så siges, at har du 256 forskellige states at ende i, er det måske på tide at revaluere hele dit design.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = \textwidth]{STM_impl_switch_case.PNG}
-    \caption{STM Switch/Case}
-    \label{fig:stm_switch_case}
-\end{figure}
-
-\subsection{The GoF State}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = \textwidth]{stm_state_gof.PNG}
-    \caption{STM Switch/Case}
-    \label{fig:stm_state_gof}
-\end{figure}
-
-Når man arbejder med switch cases kan de bliver meget komplekse, når systemet bliver for stort. Dette skyldes, at det kan forekomme mange states inkl. Nested states. Derfor anvendes GoF. Me der vil altid være fordele og ulempter
+Er det ikke så grælt, så kan du bruge state machine pattern
 
 \subsubsection*{Fordele}
 \begin{itemize}

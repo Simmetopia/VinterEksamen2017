@@ -34,22 +34,24 @@ Lad os så antage at jeg ville have en kop dejlig Espresso, så skal jeg altså 
 Her antages det at der hvor vores factory skal bruges, at der findes en parameter HotDrinkFactory. 
 
 Alternativt kan der laves en ny klasse til at encapsulere både vores te og kaffe factories kaldet DrinkFactory. Så kan der kaldes direkte på dem: 
-Nu kan vi enten ved at kalde make med den kaffe eller te vi vil have, også få det rette object tilbage.
+Så kan der pulles
 
 \begin{minted}{typescript}
 export class DrinkFactory {
-
-    public coffee: HotDrinkFactory;
-    public tea: HotDrinkFactory;
-
-    constructor() {
-        this.coffee = new CoffeeFactory();
-        this.tea = new TeaFactory();
+    getFactory(name: string): HotDrinkFactory {
+        switch (name) {
+            case 'coffee': {
+                return new CoffeeFactory();
+            }
+            case 'tea': {
+                return new TeaFactory();
+            }
+        }
     }
 }
 \end{minted}
 
-Dette kan yderligere afkobles ved at bruge dependency inversion, og dependency inject de factories man skal bruge. På den måde kan drink factory understøtte enhver 2 typer varme drinks. 
+Dette betyder at alle nu kan tilføje factories der implementere HotDrinkFactory og bruge dem i forlængelse. Dette overholder OCP. Er der mulighed for at bruge dependency injection i takt med oprettelsen af den klasse som benytter factoriet, så kan DIP også overholdes.
 
 \begin{figure}[H]
     \centering
