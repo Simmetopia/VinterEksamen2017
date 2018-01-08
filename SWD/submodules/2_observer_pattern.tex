@@ -9,17 +9,17 @@ Giv definitionen af et design pattern til at starte med.
 Observer Pattern er i gruppen af behavioral patterns, fordi den denfinerer måden for kommunkationen mellem klasserne.
 
 
-Det tillate et enkelt object kendt som "subject" til, at publiserer ændringer i dens state. En eller mange observer objekter der afhænger af subjects, kan subscribe til et, således at de automatisk bliver notificeret.
+Det tillate et enkelt object kendt som ``subject'' til, at publiserer ændringer i dens state. En eller mange observer objekter der afhænger af subjects, kan subscribe til et, således at de automatisk bliver notificeret.
 
 
 Observer Pattern giver lav koblint mellem subjects og observers
 
 
-Provider (data der ændres) og Consumer (data der skal hentes fra provider)
+Subject (data der ændres) og Observer (data der skal hentes fra Subject)
 \begin{itemize}
-    \item Vi skal kunne tillate consumeren til at blive tilføjet (attached) til provideren uden, at ændre implementeringsmæssigt for Procider (OCP)
-    \item Tillade provideren til at informaerer consumers ved data ændring (lav kobling)
-    \item Tillage mange consumers til, at blive informeret på opdatering af den samme data.
+    \item observeren skal kunne tilføjes (attached) til subject uden, at ændre implementeringsmæssigt for subject (OCP)
+    \item Tillade provideren til at notificere observers ved data ændring (lav kobling)
+    \item Tillade mange observers til, at blive informeret på opdatering af den samme data.
     \item Se efter 1-many afhængigheder således, at når det ene object ændrer state, til dens afhængige blive notificeret og opdateret automatisk.
 \end{itemize}
 
@@ -34,7 +34,7 @@ At anvende SOLID principper, fremmer godt software design. At følge OCP betyder
 
 \subsection*{Fordele}
 \begin{itemize}
-    \item Skaber lav kobling mellem provider og consumer objekter.
+    \item Skaber lav kobling mellem Subject og Observer objekter.
     \item Tillader ét subject at opdateren x antal observers automatisk. 
     \item Ingen behov for, at modificerer på Subject ved tilføjelse af nye observers. Dette er pga. OCP.
     \item Tilføje og fjerne eksisterende observers til enhver tid.
@@ -44,6 +44,7 @@ At anvende SOLID principper, fremmer godt software design. At følge OCP betyder
 \begin{itemize}
     \item Rækkefølgen af notifications af observers kan være uafhængig.
     \item Memoryleak kan forekomme i ikke Garbage-Collection sprog pga. du explicit skal attach og detach Subject.
+    \item tilføjer en kompleksitet som ikke altid er nødvendig.
 \end{itemize}
 \subsection{Push vs Pull Observer}
 Når du har klaret opsætningen med observer, så skal der tages endnu et valg. Vil du kører med en push observer eller en pull observer?

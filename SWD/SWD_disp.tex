@@ -30,12 +30,15 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \title{SWD Dispositioner}
+
 \graphicspath{{pics/}{../pics/}}
 \usepackage[backend=biber,style=science,sorting=ynt,citestyle=science]{biblatex}
 \addbibresource{references.bib}
 \usepackage{graphicx}
 \begin{document}
 \maketitle
+\setcounter{secnumdepth}{1}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \newpage
 \subfile{submodules/1_strategy_template_method_pattern}
@@ -53,4 +56,8 @@
 \subfile{submodules/7_futures_pipelines}
 \newpage
 \subfile{submodules/8_software_architecture}
+\newpage
+\subfile{submodules/9_decorator_pattern}
+\newpage
+\subfile{submodules/solid}
 \end{document}
